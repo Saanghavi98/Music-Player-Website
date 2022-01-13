@@ -1,0 +1,211 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Lato', sans-serif;
+    color: #eeeeee;
+}
+
+body{
+    background-color:#202020;
+}
+
+/* TITLE BAR */
+
+.logo{
+    width:100%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #363636;
+}
+
+.headphones{
+    font-size: 40px;
+    color: #2ea05c;
+    margin: 10px;
+}
+
+span{
+    font-size: 40px;
+    color: #2ea05c;
+}
+
+/* MAIN */
+
+
+img{
+    height: 300px;
+    width: 300px;
+    margin-top: 20px;
+}
+
+ .container{
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.content{
+    margin-left: 30px;
+    line-height: 1.5;
+}
+
+.singerName{
+    font-size: 50px;
+}
+
+.albumName{
+    font-size: 25px;
+}
+
+/* SONG LIST */
+
+ .songsList{
+    margin-left: 100px;
+}
+
+.song{
+    width: 95%;
+    height: 50px;
+    display: grid;
+    grid-template-columns:90px 1fr 1fr 60px;
+    align-items: center;
+    cursor:pointer;
+    border-bottom: 1px solid #3e3e3e;
+}
+
+.song:hover{
+    background-color:#3e3e3e;
+}
+
+.song:last-child{
+    border:none;
+}
+
+.song p{
+    font-size: 15px;
+}
+
+.song .time{
+    text-align:right;
+}
+
+/* PLAYER */
+
+.player{
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* PROGRESS BAR AREA */
+
+.progress-area{
+    height: 3px;
+    width: 100%;
+    background-color:#3e3e3e;
+    border-radius: 50px;
+    cursor: pointer;
+    padding-right:10px;
+}
+
+.progress-area .progress-bar{
+    height: inherit;
+    width: 0%;
+    position: relative;
+    border-radius: inherit;
+    background:#2ea05c;
+}
+
+.progress-bar::before{
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    background: #000;
+    border-radius: inherit;
+    top: 50%;
+    right:-5px;
+    transform: translateY(-50%);
+    background: inherit;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.progress-area:hover .progress-bar::before{
+    opacity: 1;
+}
+
+.progress-area .timer{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.timer span{
+    font-size: 12px;
+}
+
+.timer{
+    background-color: #202020;
+}
+
+ 
+.controlsContainer{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    height:60px;
+    background-color: #202020;
+}
+
+.playerImage{
+    height: 48px;
+    width: 48px;
+    margin-left:5px;
+    margin-bottom: 20px;
+}
+
+.currentSongName{
+    width: 490px;
+    font-size: 17px;
+    margin-left: 20px;
+}
+
+/* CONTROLS */
+
+.controls{
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.control:hover, #shuffle:hover{
+    color:#3e3e3e;
+}
+
+.control{
+    font-size: 32px;
+    margin: 10px;
+    cursor: pointer;
+    color: #2ea05c;
+}
+
+.play{
+    font-size: 40px;
+}
+
+#shuffle{
+    font-size: 25px;
+    margin-left: 20px;
+    cursor: pointer;
+    color: #2ea05c;
+}
+
+
+
+
+

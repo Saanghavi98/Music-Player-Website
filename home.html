@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <title>Beats</title>
+</head>
+<body>
+   <header>
+        <div class="logo">
+        <i class="fas fa-headphones headphones"></i><span> Beats</span>
+        </div>
+   </header>
+    <main>
+  
+        <div class="swiper mySwiper" id="remove">
+            <div class="swiper-wrapper albums">
+            </div>
+          </div>
+         
+    </main>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 4,
+          spaceBetween: 0,
+          freeMode: true,
+          keyboard: {
+              enabled: true,
+          }
+        });
+
+      </script>
+    <script src="home.js"></script>
+</body>
+</html>
+

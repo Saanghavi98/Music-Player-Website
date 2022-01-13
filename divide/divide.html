@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Nunito+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Beats</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+      <i class="fas fa-headphones headphones"></i><span> Beats</span>
+      </div>
+  </header>
+   <main>
+      <div class="container">
+        <img src="folder.jpg" alt="cover image" />
+        <div class="content">
+          <p class="singerName"></p>
+          <p class="albumName"></p>
+        </div>
+   </main>
+
+    <ul class="songsList"></ul>
+
+    <div class="player">
+      <div class="progress-area">
+        <div class="progress-bar"></div>
+        <div class="timer">
+          <span class="current"></span>
+          <span class="duration"></span>
+        </div>
+      </div>
+
+      <div class="controlsContainer">
+        <img src="" alt="cover image" class="playerImage" />
+        <p class="currentSongName"></p>
+        <audio src="" class="audio"></audio>
+
+        <div class="controls">
+          <i class="fas fa-step-backward control" id="prev"></i>
+          <i class="far fa-play-circle control play" id="play"></i>
+          <i class="fas fa-step-forward control" id="next"></i>
+          <i class="fas fa-random" id="shuffle"></i>
+        </div>
+
+      </div>
+      
+    </div>
+   
+    <script src="divide.js"></script>
+  </body>
+</html>

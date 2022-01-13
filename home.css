@@ -1,0 +1,105 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color:#07060d;
+    position: relative;
+    height: 100%;
+  }
+
+/* TITTLE BAR */
+.logo{
+    width:100%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headphones{
+    font-size: 40px;
+    margin: 10px;
+    color: #2ea05c;
+}
+
+span{
+    font-size: 40px;
+    color: #2ea05c;
+}
+
+
+/* MAIN BODY */
+main{
+    padding: 40px 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.albums{
+    width: 100%;
+    display: flex; 
+}
+
+.cover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coverImage{
+    margin-top: 20px;
+    height: 350px;
+    width:295px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.coverImage:hover{
+    box-shadow: #292b31 0px 5px 15px;
+}
+
+h4 a{
+    text-decoration: none;
+    color: #3e3e3e;
+    font-size: 14px;
+}
+
+.artistName{
+    font-size: 15px;
+    color: #bec2c9;
+    text-align: center;
+}
+
+.albumName{
+    color: #2ea05c;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
