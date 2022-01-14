@@ -88,7 +88,6 @@ function loadSong(){
     albumName.textContent = music.album;
     currentSongName.textContent = music.song;
     audio.src = music.audio;
-    audio.play();
     }
 
 window.addEventListener('DOMContentLoaded', function(){
@@ -117,6 +116,7 @@ let nextSong = () =>{
         currentSong = 0;
     }
     loadSong();
+    audio.play();   
 }
 
 let prevSong = () => {
@@ -127,6 +127,7 @@ let prevSong = () => {
         currentSong = all.length-1;
     }
     loadSong();
+    audio.play();    
 }
 
 next.addEventListener('click', nextSong);
@@ -138,6 +139,7 @@ shuffle.addEventListener('click', function(){
     play.classList.remove('fa-play-circle');
     play.classList.add('fa-pause-circle');
     loadSong();
+    audio.play();    
 })
 
 
