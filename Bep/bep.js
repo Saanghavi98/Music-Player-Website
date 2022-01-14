@@ -125,7 +125,6 @@ function loadSong(){
     albumName.textContent = music.album;
     currentSongName.textContent = music.song;
     audio.src = music.audio;
-    audio.play();
     }
 
 
@@ -154,6 +153,7 @@ window.addEventListener('DOMContentLoaded', function(){
             currentSong = 0;
         }
         loadSong();
+        audio.play();
     }
     
     let prevSong = () => {
@@ -164,6 +164,7 @@ window.addEventListener('DOMContentLoaded', function(){
             currentSong = mastersOfTheSun.length-1;
         }
         loadSong();
+        audio.play();
     }
     
     next.addEventListener('click', nextSong);
@@ -175,6 +176,7 @@ window.addEventListener('DOMContentLoaded', function(){
         play.classList.remove('fa-play-circle');
         play.classList.add('fa-pause-circle');
         loadSong();
+        audio.play();
     })
 
 //updating progress bar with current song duration
